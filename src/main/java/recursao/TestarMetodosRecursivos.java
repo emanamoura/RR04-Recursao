@@ -5,6 +5,9 @@ public class TestarMetodosRecursivos {
 
 	public static void main(String[] args) {
 		MetodosRecursivos metodos = new MetodosRecursivos();
+		System.out.println("Calcular soma de um array: ");
+		int[] array_int = {10, 5, 21, 1};
+		System.out.println(metodos.calcularSomaArray(array_int, array_int.length - 1));
 		System.out.println("Questão 1:");
 		System.out.println(metodos.calcularFatorial(5));
 		System.out.println("Questão 2:");

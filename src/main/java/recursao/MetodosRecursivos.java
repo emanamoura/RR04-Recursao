@@ -2,11 +2,12 @@ package recursao;
 
 public class MetodosRecursivos {
 
-	public int calcularSomaArray(int[] array){
-		int result = 0;
-		// TODO ESCREVA AQUI O CÓDIGO (USANDO RECURSAO) PARA CALCULAR A SOMA
-		// DOS EMENTOS DE UM ARRAY
-		return result;
+	public int calcularSomaArray(int[] array, int index){
+		if(index < 0) {
+			return 0;
+		}
+		int element = array[index];
+		return calcularSomaArray(array, index - 1) + element;
 	}
 	public long calcularFatorial(int n) {
 		if(n == 1 || n == 0) {
